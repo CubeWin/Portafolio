@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <style>
+            main {
+                background: radial-gradient(
+                    circle,
+                    rgba(0, 103, 188, 1) 0%,
+                    rgba(50, 68, 130, 1) 51%,
+                    rgb(10, 8, 19) 100%
+                );
+            }
+        </style>
+        <title>CubeWin</title>
+        <link
+            rel="shortcut icon"
+            href="./assets/img/cubewin.svg"
+            type="image/x-icon"
+        />
+        <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="./assets/css/cubewin.css" />
+        <link rel="stylesheet" href="./assets/css/font-awesome.min.css" />
+        <link rel="stylesheet" href="./assets/css/cubewin.animate.css" />
+    </head>
+
+    <body>
+        <main style="overflow: hidden; width: 100%; position: relative">
+            <div class="overflow-hidden">
+                <div class="cw__inicio--animation">
+                    <div id="navigation-section" class="cw__navigation--inicio">
+                        <nav
+                            class="navbar navbar-expand-lg navbar-dark cw__background--transparent2"
+                        >
+                            <div
+                                class="container-fluid d-flex justify-content-between"
+                            >
+                                <a
+                                    class="text-light text-decoration-none"
+                                    href="#"
+                                >
+                                    <img
+                                        src="./assets/img/cubewin.svg"
+                                        alt="CubeWin"
+                                        style="height: 50px"
+                                    />
+                                    CubeWin
+                                </a>
+                                <button
+                                    class="navbar-toggler"
+                                    type="button"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#cw-navbar"
+                                    aria-controls="cw-navbar"
+                                    aria-expanded="false"
+                                    aria-label="Toggle navigation"
+                                >
+                                    <span class="navbar-toggler-icon"></span>
+                                </button>
+                                <div
+                                    class="collapse navbar-collapse"
+                                    id="cw-navbar"
+                                    style="flex-grow: 0"
+                                >
+                                    <div class="navbar-nav">
+                                        <div class="nav-link active">
+                                            <a
+                                                class="nav-link p-3 mx-3 text-white fw-bold text-uppercase"
+                                                href="./"
+                                                >Inicio</a
+                                            >
+                                        </div>
+                                        <div class="nav-link">
+                                            <a
+                                                class="nav-link p-3 mx-3 text-white fw-bold text-uppercase"
+                                                href="./"
+                                                >Sobre mí</a
+                                            >
+                                        </div>
+                                        <div class="nav-link">
+                                            <a
+                                                class="nav-link p-3 mx-3 text-white fw-bold text-uppercase"
+                                                href="./"
+                                                >Habilidades</a
+                                            >
+                                        </div>
+                                        <div class="nav-link">
+                                            <a
+                                                class="nav-link p-3 mx-3 text-white fw-bold text-uppercase"
+                                                href="./"
+                                                >Portafolio</a
+                                            >
+                                        </div>
+                                        <div class="nav-link">
+                                            <a
+                                                class="nav-link p-3 mx-3 text-white fw-bold text-uppercase"
+                                                href="./"
+                                                >Contactos</a
+                                            >
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div
+                        class="position-absolute cw-background-nc"
+                        style="height: 100vh; width: 100%; z-index: 2"
+                    >
+                        <div class="position-absolute w-100" style="bottom: 0">
+                            <img
+                                src="assets/img/ambiente2/montanha01.svg"
+                                class="img-fluid w-100"
+                            />
+                        </div>
+                        <div class="position-absolute w-100" style="bottom: 0">
+                            <img
+                                src="assets/img/ambiente2/montanha02.svg"
+                                class="img-fluid w-100"
+                            />
+                        </div>
+                        <div class="position-absolute w-100" style="bottom: 0">
+                            <img
+                                src="assets/img/ambiente2/cesped01.svg"
+                                class="img-fluid w-100"
+                            />
+                        </div>
+                        <div class="position-absolute w-100" style="bottom: 0">
+                            <img
+                                src="assets/img/ambiente2/cesped02.svg"
+                                class="img-fluid w-100"
+                                style="animation: cesped 3s infinite"
+                            />
+                        </div>
+                        <div class="position-absolute w-100" style="bottom: 0">
+                            <img
+                                src="assets/img/ambiente2/pastito01.svg"
+                                class="img-fluid w-100"
+                            />
+                        </div>
+                        <div class="position-absolute w-100" style="bottom: 0">
+                            <img
+                                src="assets/img/ambiente2/tierra02.svg"
+                                class="img-fluid w-100"
+                            />
+                        </div>
+                    </div>
+                    <!-- 1080=420 || 720=320 || movil = 240 corregir animacion-->
+                    <div
+                        id="person-shadow"
+                        class="cw__person--dark"
+                        style="height: 426px; width: 100%; bottom: 2px"
+                    >
+                        <!-- AQUÍ SE MODIFICA  -->
+                        <img class="" src="body.svg" alt="" />
+                        <img class="hair" src="cabello.svg" alt="" />
+                        <img class="tail" src="mecha.svg" alt="" />
+                        <img class="campa" src="campana.svg" alt="" />
+                        <img class="campa2" src="campana2.svg" alt="" />
+                    </div>
+                    <div id="cloud-shadow" class="cw__cloud--dark">
+                        <img src="assets/img/nub01.svg" />
+                    </div>
+                    <div id="star-light" class="cw__star--light">
+                        <img src="assets/img/estrella_01.svg" />
+                    </div>
+                    <div id="trace-horizontal" class="cw__trace--light">
+                        <div class="trace-h"></div>
+                    </div>
+                    <div id="trace-vertical" class="cw__trace--light">
+                        <div class="trace-v"></div>
+                    </div>
+                    <div id="light-star" class="cw__light--star">
+                        <div></div>
+                    </div>
+                    <div
+                        id="sky"
+                        class="cw__static--sky"
+                        style="background-attachment: fixed"
+                    ></div>
+
+                    <div id="luciern" class="cw__luciern--full">
+                        <div
+                            class="cw__luciern"
+                            style="
+                                width: 20px;
+                                height: 20px;
+                                top: 51vh;
+                                left: 78vw;
+                            "
+                        ></div>
+                        <div
+                            class="cw__luciern"
+                            style="
+                                width: 20px;
+                                height: 20px;
+                                top: 1vh;
+                                left: 38vw;
+                            "
+                        ></div>
+                        <div
+                            class="cw__luciern"
+                            style="
+                                width: 20px;
+                                height: 20px;
+                                top: 50vh;
+                                left: 7vw;
+                            "
+                        ></div>
+                        <div
+                            class="cw__luciern"
+                            style="
+                                width: 14px;
+                                height: 14px;
+                                top: 56vh;
+                                left: 10vw;
+                            "
+                        ></div>
+                        <div
+                            class="cw__luciern"
+                            style="
+                                width: 20px;
+                                height: 20px;
+                                top: 65vh;
+                                left: 28vw;
+                            "
+                        ></div>
+                        <div
+                            class="cw__luciern"
+                            style="
+                                width: 4px;
+                                height: 4px;
+                                top: 25vh;
+                                left: 23vw;
+                            "
+                        ></div>
+                        <div
+                            class="cw__luciern"
+                            style="
+                                width: 10px;
+                                height: 10px;
+                                top: 78vh;
+                                left: 23vw;
+                            "
+                        ></div>
+                        <div
+                            class="cw__luciern"
+                            style="
+                                width: 13px;
+                                height: 13px;
+                                top: 18vh;
+                                left: 13vw;
+                            "
+                        ></div>
+                        <div
+                            class="cw__luciern"
+                            style="
+                                width: 18px;
+                                height: 18px;
+                                top: 36vh;
+                                left: 54vw;
+                            "
+                        ></div>
+                        <div
+                            class="cw__luciern"
+                            style="
+                                width: 7px;
+                                height: 7px;
+                                top: 43vh;
+                                left: 58vw;
+                            "
+                        ></div>
+                        <div
+                            class="cw__luciern"
+                            style="
+                                width: 15px;
+                                height: 15px;
+                                top: 46vh;
+                                left: 65vw;
+                            "
+                        ></div>
+                        <div
+                            class="cw__luciern"
+                            style="
+                                width: 10px;
+                                height: 10px;
+                                top: 60vh;
+                                left: 69vw;
+                            "
+                        ></div>
+                        <div
+                            class="cw__luciern"
+                            style="
+                                width: 3px;
+                                height: 3px;
+                                top: 65vh;
+                                left: 63vw;
+                            "
+                        ></div>
+                        <div
+                            class="cw__luciern"
+                            style="
+                                width: 0px;
+                                height: 0px;
+                                top: 70vh;
+                                left: 60vw;
+                            "
+                        ></div>
+                        <div
+                            class="cw__luciern"
+                            style="
+                                width: 14px;
+                                height: 14px;
+                                top: 10vh;
+                                left: 71vw;
+                            "
+                        ></div>
+                        <div
+                            class="cw__luciern"
+                            style="
+                                width: 10px;
+                                height: 10px;
+                                top: 6vh;
+                                left: 78vw;
+                            "
+                        ></div>
+                        <div
+                            class="cw__luciern"
+                            style="
+                                width: 8px;
+                                height: 8px;
+                                top: 26vh;
+                                left: 79vw;
+                            "
+                        ></div>
+                        <div
+                            class="cw__luciern"
+                            style="
+                                width: 25px;
+                                height: 25px;
+                                top: 43vh;
+                                left: 89vw;
+                            "
+                        ></div>
+                    </div>
+                    <div id="message" class="cw__bg--message">
+                        <div class="text-white text-center cw__incio--title">
+                            <div
+                                style="
+                                    border-bottom: 3px solid #fff;
+                                    letter-spacing: 3px;
+                                "
+                            >
+                                Eliud Pedraza
+                            </div>
+                            <div
+                                class="text-uppercase fw-bold m-0 cw__title--message"
+                            >
+                                web development
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <div class="container-fluid position-relative" style="background-color: #002244;">
+            <div
+            class="position-absolute"
+                style="
+                    background: rgb(0, 0, 0);
+                    background: linear-gradient(
+                        180deg,
+                        #05081d 0%,
+                        #090b23 20%,
+                        #002244 70%,
+                        #00000000 90%
+                    );
+                    width: 100%;
+                    top: 0;
+                    height: 450px;
+                    left: 0;
+                "
+            ></div>
+            <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/p5@1.4.0/lib/p5.min.js"></script>
+        <script src="particle.js"></script>
+        <script src="./assets/js/popper.min.js"></script>
+        <script src="./assets/js/bootstrap.min.js"></script>
+        <script src="./assets/js/cubewin.js"></script>
+    </body>
+</html>
