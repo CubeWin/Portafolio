@@ -38,10 +38,12 @@
 .active--01 {
     right: 130px;
     cursor: pointer;
+    border-radius: 5px;
 }
 .active--02 {
     right: 20px;
     cursor: pointer;
+    border-radius: 5px;
 }
 
 .decoration--content {
@@ -49,6 +51,15 @@
     right: 20px;
     bottom: 5px;
     z-index: 3;
+}
+.decorator-box {
+    width: 117px;
+}
+.decorator-box > span {
+    display: block;
+    height: 4px;
+    border-radius: 3px;
+    background-color: #b5bfc6;
 }
 .active--content {
     width: 100%;
@@ -58,20 +69,15 @@
     z-index: 2;
     cursor: auto;
 }
-/* .item-carrusel {
-    overflow: hidden;
-    height: 150px;
-    width: 98px;
+
+.carrusel--arrow {
+    height: 35px !important;
+    width: 35px !important;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: #e4ebf1;
 }
 
-.content--all .active {
-    width: 100% !important;
-    height: 100% !important;
+.active--01:hover, .active--02:hover, .carrusel--arrow:hover {
+    box-shadow: -3px -3px 10px #fafbff8e, 3px 3px 10px #161b1d77;
 }
-
-.item-carrusel img {
-    position: absolute;
-    height: 100%;
-    opacity: 0.4;
-    z-index: 5;
-} */
