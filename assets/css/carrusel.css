@@ -1,41 +1,63 @@
 .content--all {
-    background-color: #0a4683;
+    background-color: #830a5f;
     height: 90vh;
     position: relative;
     width: 100%;
+    overflow: hidden;
 }
 
-.box-item-content {
+.item--content,
+.decoration--content {
     position: absolute;
+}
+
+.item--content {
+    height: 150px;
+    width: 100px;
+    z-index: 3;
+    transition: all 0.3s ease-in-out;
+}
+
+.prc--01 {
+    background-color: #0b539b;
+    bottom: 55px;
+}
+
+.prc--02 {
+    background-color: #5a9b63;
+    bottom: 55px;
+}
+
+.prc--03 {
+    background-color: #bd8a1c;
+    bottom: 55px;
+}
+.opacity--00 {
+    opacity: 0;
+}
+.active--01 {
+    right: 130px;
+    cursor: pointer;
+}
+.active--02 {
+    right: 20px;
+    cursor: pointer;
+}
+
+.decoration--content {
+    width: 210px;
+    right: 20px;
+    bottom: 5px;
+    z-index: 3;
+}
+.active--content {
+    width: 100%;
+    height: 100%;
     right: 0;
     bottom: 0;
-    background-color: aqua;
-    height: 300px;
-    width: 400px;
-}
-
-.all-items {
-    width: 100%;
-    display: flex !important;
-    background-color: antiquewhite;
-}
-
-.item-carrusel {
-    overflow: hidden;
-    height: 150px;
-    width: 98px;
     z-index: 2;
+    cursor: auto;
 }
-.all-items .active {
-    position: absolute !important;
-    height: 100% !important;
-    width: 100% !important;
-    z-index: 1 !important;
-    left: calc(-100% + 50px);
-    top: calc(-100% + 20px);
-    clip-path: inset(63% 14% 2% 64%);
-}
-
 /* .item-carrusel {
     overflow: hidden;
     height: 150px;
