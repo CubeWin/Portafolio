@@ -1,9 +1,10 @@
 .content--all {
-    background-color: #830a5f;
-    height: 90vh;
+    height: 80vh;
     position: relative;
     width: 100%;
     overflow: hidden;
+    background-color: rgba(228, 235, 241, 0.1);
+    box-shadow: -13px 13px 30px rgba(0, 0, 0, 0.4);
 }
 
 .item--content,
@@ -49,7 +50,7 @@
 .decoration--content {
     width: 210px;
     right: 20px;
-    bottom: 5px;
+    bottom: 8px;
     z-index: 3;
 }
 .decorator-box {
@@ -71,13 +72,23 @@
 }
 
 .carrusel--arrow {
-    height: 35px !important;
-    width: 35px !important;
+    height: 40px !important;
+    width: 40px !important;
     border-radius: 50%;
     cursor: pointer;
     background-color: #e4ebf1;
 }
 
-.active--01:hover, .active--02:hover, .carrusel--arrow:hover {
+.active--01:hover,
+.active--02:hover,
+.carrusel--arrow:hover {
     box-shadow: -3px -3px 10px #fafbff8e, 3px 3px 10px #161b1d77;
+}
+
+.carrusel--shadow {
+    box-shadow: -13px 13px 50px rgba(0, 0, 0, 0.6);
+}
+
+.project--description {
+    font-family: "Open-Sans";
 }

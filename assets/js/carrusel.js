@@ -26,20 +26,34 @@ const rezi = async (a) => {
         pjt01.classList.remove("active--02");
         pjt02.classList.remove("active--02");
         pjt03.classList.remove("active--02");
+
+        const dp1 = document.querySelector("#description--project01");
+        const dp2 = document.querySelector("#description--project02");
+        const dp3 = document.querySelector("#description--project03");
+
         pjt02.classList.add("active--01");
 
         switch (myKey) {
             case "1":
                 pjt02.classList.add("active--01");
                 pjt03.classList.add("active--02");
+                dp1.classList.remove("opacity--00");
+                dp2.classList.add("opacity--00");
+                dp3.classList.add("opacity--00");
                 break;
             case "2":
                 pjt03.classList.add("active--01");
                 pjt01.classList.add("active--02");
+                dp2.classList.remove("opacity--00");
+                dp3.classList.add("opacity--00");
+                dp1.classList.add("opacity--00");
                 break;
             case "3":
                 pjt01.classList.add("active--01");
                 pjt02.classList.add("active--02");
+                dp3.classList.remove("opacity--00");
+                dp1.classList.add("opacity--00");
+                dp2.classList.add("opacity--00");
                 break;
             default:
                 break;

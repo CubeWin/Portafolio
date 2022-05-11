@@ -1,0 +1,31 @@
+.sobre--mi {
+    min-height: 90vh;
+    width: 100%;
+}
+
+.mi-background {
+    background-image: url(http://localhost:5500/assets/img/eliuddesk.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: inset 0px 0px 100px 100px #002244;
+    background-position: center;
+}
+
+.mi--title {
+    font-size: 4.5em;
+    font-family: "Audiowide";
+}
+
+.mi--ffos {
+    font-family: "Open-Sans";
+}
+.mi--image {
+}
+.my-marco {
+    background: #5b94ccad;
+    background: linear-gradient(180deg, rgba(9, 9, 121, 0) 55%, rgba(114, 163, 202, 0.4) 100%);
+    width: 380px;
+    height: 490px;
+    border-radius: 4px;
+    box-shadow: -13px 13px 50px rgba(0, 0, 0, 0.6);
+}
