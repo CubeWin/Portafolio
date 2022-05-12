@@ -20,9 +20,11 @@ const rezi = async (a) => {
         pjt01.classList.remove("active--content");
         pjt02.classList.remove("active--content");
         pjt03.classList.remove("active--content");
+
         pjt01.classList.remove("active--01");
         pjt02.classList.remove("active--01");
         pjt03.classList.remove("active--01");
+
         pjt01.classList.remove("active--02");
         pjt02.classList.remove("active--02");
         pjt03.classList.remove("active--02");
@@ -31,7 +33,7 @@ const rezi = async (a) => {
         const dp2 = document.querySelector("#description--project02");
         const dp3 = document.querySelector("#description--project03");
 
-        pjt02.classList.add("active--01");
+        // pjt02.classList.add("active--01");
 
         switch (myKey) {
             case "1":

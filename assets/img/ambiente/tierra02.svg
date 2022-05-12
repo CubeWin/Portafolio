@@ -1,0 +1,20 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20010904//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<!-- Created using Krita: https://krita.org -->
+<svg xmlns="http://www.w3.org/2000/svg" 
+    xmlns:xlink="http://www.w3.org/1999/xlink"
+    xmlns:krita="http://krita.org/namespaces/svg/krita"
+    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+    width="1382.4pt"
+    height="777.6pt"
+    viewBox="0 0 1382.4 777.6">
+<defs>
+  <radialGradient id="gradient0" gradientUnits="objectBoundingBox" cx="0.5" cy="0.0207231901247245" fx="0.5" fy="0.0199914308027127" r="1.75818220701079" spreadMethod="pad">
+   <stop stop-color="#000000" offset="0.285714285714286" stop-opacity="0"/>
+   <stop stop-color="#000000" offset="0.321428571428571" stop-opacity="0"/>
+   <stop stop-color="#0a0b1d" offset="0.696428571428571" stop-opacity="1"/>
+   <stop stop-color="#0a0b1d" offset="1" stop-opacity="1"/>
+  </radialGradient>
+ </defs>
+<path id="shape0" transform="translate(0, 700.919975439293)" fill="url(#gradient0)" fill-rule="evenodd" stroke="#000000" stroke-opacity="0" stroke-width="0" stroke-linecap="square" stroke-linejoin="bevel" d="M0 76.68L0 0.00216941C60.42 11.4478 462.84 73.0622 691.2 73.0618C923.64 73.0615 1333.38 9.34721 1382.4 0L1382.4 76.68C1336.02 76.6394 875.217 76.6394 0 76.68Z"/>
+</svg>

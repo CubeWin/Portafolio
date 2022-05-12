@@ -40,10 +40,12 @@
 //   }, 1000);
 //   console.log("no hay focus");
 // };
+
 // window.onblur = function () {
 //   StaAnimate.pause();
 //   console.log("si hay focus");
 // };
+
 // window.onscroll = function () {
 //   scrollFunction();
 // };
@@ -73,6 +75,7 @@ const cw_skill = () => {
   body01.classList.remove('d-none');
   body02.classList.add('d-none');
 };
+
 const cw_project = () => {
   const btn01 = document.querySelector("#cw-btnProject");
   const btn02 = document.querySelector("#cw-btnSkill");

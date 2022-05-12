@@ -1,17 +1,38 @@
-.cw-background-nc {
+#MyNewCanvas {
+    position: absolute;
+    top: 0;
+}
+.cw__inicio--main {
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+    background: radial-gradient(
+        circle,
+        rgba(0, 103, 188, 1) 0%,
+        rgba(50, 68, 130, 1) 51%,
+        rgb(10, 8, 19) 100%
+    );
+}
+
+.cw__inicio--animation {
+    width: 100%;
     height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.cw-background-nc {
+    height: 100%;
     width: 100%;
     z-index: 2;
 }
-
+/** persona */
 .cw__person--dark {
     position: absolute;
     bottom: 2px;
     width: 100%;
     height: 426px;
-    display: flex;
-    justify-content: center;
-    z-index: 6;
+    z-index: 3;
 }
 
 .cw__person--dark > img {
@@ -20,69 +41,51 @@
     bottom: -14%;
     padding: 0;
     margin: 0;
-    z-index: 7;
 }
 
-.cw__base--dark {
-    position: absolute;
-    box-sizing: border-box;
-    width: 100%;
-    bottom: -5px;
-    max-height: 155px;
-    height: 150px;
-    z-index: 2;
+.tail {
+    animation: ktail 3s infinite;
 }
 
-.cw__base--dark > img {
-    width: 100%;
+.hair {
+    animation: khair 5s ease-in-out infinite;
 }
 
-.cw__cloud--dark {
-    position: absolute;
-    box-sizing: border-box;
-    width: 100%;
-    top: 0;
-    overflow: hidden;
-    z-index: 2;
+.campa {
+    animation: kcamp 3s infinite;
+    opacity: 0.9;
 }
 
+.campa2 {
+    animation: kcamp2 4s infinite;
+    opacity: 0.87;
+}
+/** nube */
 .cw__cloud--dark > img {
     width: 100%;
     opacity: 0.35;
 }
-
-.cw__star--light {
+/** estrella */
+.cw__new--start {
     position: absolute;
-    box-sizing: border-box;
     width: 100%;
     height: 100%;
     top: 0;
-    overflow: hidden;
-    z-index: 6;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    z-index: 2;
 }
 
-.cw__star--light > img {
+.cw__img--start,
+.cw__new--light {
+    position: absolute;
+}
+
+.cw__img--start {
     height: 80px;
+    z-index: 2;
+    opacity: 0.9;
 }
 
-.cw__trace--light {
-    position: absolute;
-    box-sizing: border-box;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    overflow: hidden;
-    z-index: 3;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.cw__trace--light > div {
-    position: relative;
+.cw__new--light {
     background: rgb(176, 219, 255);
     background: radial-gradient(
         circle,
@@ -93,62 +96,21 @@
     border-radius: 50%;
 }
 
-.cw__trace--light > .trace-h {
+.cw__new--start > .trace-h {
     width: 85%;
     height: 12px;
 }
 
-.cw__trace--light > .trace-v {
+.cw__new--start > .trace-v {
     width: 12px;
     height: 69%;
 }
-
-.cw__light--star {
-    position: absolute;
-    box-sizing: border-box;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    overflow: hidden;
-    z-index: 5;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.cw__light--star > div {
-    width: 30px;
-    height: 30px;
-    background: rgba(102, 255, 255, 0.6);
-    border: none;
-    border-radius: 100%;
-    box-shadow: 0px 0px 65px 45px rgba(102, 255, 255, 0.9);
-}
-
-.cw__static--sky {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    z-index: 1;
-    /* animation: cube-start-rotate 55s linear infinite; */
-}
-
-.cw__rotation--sky {
-    position: absolute;
-    box-sizing: border-box;
-    width: 200vw;
-    height: 200vh;
-    top: 0vh;
-    left: -50vw;
-    overflow: hidden;
-    z-index: 1;
-    /* animation: cube-start-rotate 180s linear infinite; */
-}
-
+/** luciernagas */
 .cw__luciern--full {
     position: absolute;
     width: 100%;
     height: 100%;
+    top: 0;
 }
 
 .cw__luciern {
@@ -161,4 +123,99 @@
         rgb(223, 255, 255) 0%,
         rgb(19, 139, 235) 100%
     );
+    box-shadow: inset 0px 0px 3px 1px rgb(19, 139, 235),
+        0px 0px 15px 10px rgb(19, 139, 235);
+    animation: cubeLun 5s linear infinite;
+}
+
+/** mensaje */
+.cw__bg--message {
+    position: absolute;
+    width: 100%;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+}
+.cw__incio--titleBox {
+    font-size: 4em;
+    font-family: "Audiowide", cursive;
+    animation: text-win 10s infinite linear;
+}
+
+.cw__incio--title {
+    border-bottom: 3px solid #fff;
+    letter-spacing: 3px;
+}
+
+.cw__title--message {
+    font-size: 0.5em;
+    letter-spacing: 2px;
+    height: 15px;
+    color: rgb(255, 255, 255);
+    text-shadow: -1px 1px 10px rgba(15, 15, 15, 0.6);
+}
+/**
+ * !keyframes
+ **/
+@keyframes cubeLun {
+    50% {
+        box-shadow: inset 0px 0px 2px 0px rgb(19, 139, 235),
+            0px 0px 5px 3px rgb(19, 139, 235);
+    }
+    100% {
+        box-shadow: inset 0px 0px 3px 1px rgb(19, 139, 235),
+            0px 0px 15px 10px rgb(19, 139, 235);
+    }
+}
+@keyframes text-win {
+    0% {
+        opacity: 1;
+    }
+    10% {
+        opacity: 0.3;
+    }
+    20% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes ktail {
+    50% {
+        transform: translateX(3px) rotateZ(-deg) scaleY(1.005);
+    }
+}
+
+@keyframes khair {
+    30% {
+        transform: scaleY(1.02) translateX(6px) rotateZ(-3deg) translateY(6px);
+    }
+    80% {
+        transform: scaleY(1.05) translateX(-2px) rotateZ(0.8deg) translateY(4px);
+    }
+}
+
+@keyframes kcamp {
+    50% {
+        transform: translateX(7px) rotateZ(-3deg);
+    }
+}
+
+@keyframes kcamp2 {
+    50% {
+        transform: translateX(-3px) rotateZ(3deg);
+    }
+}
+
+@keyframes cesped {
+    30% {
+        transform: scaleX(0.95) translateY(-2px);
+    }
+    80% {
+        transform: scaleX(1.03) translateY(5px);
+    }
 }

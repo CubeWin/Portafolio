@@ -1,13 +1,31 @@
+.cw__sobre--mi{
+    min-height: 100vh;
+}
+.cw__bg--decoration {
+    background: rgb(0, 0, 0);
+    background: linear-gradient(
+        180deg,
+        #05081d 0%,
+        #090b23 20%,
+        #002244 70%,
+        #00000000 90%
+    );
+    width: 100%;
+    top: 0;
+    height: 200px;
+    left: 0;
+    z-index: -1;
+}
 .sobre--mi {
     min-height: 90vh;
     width: 100%;
 }
 
 .mi-background {
-    background-image: url(http://localhost:5500/assets/img/eliuddesk.webp);
+    background-image: url(http://192.168.0.8:5500/assets/img/eliuddesk.webp);
     background-size: cover;
     background-repeat: no-repeat;
-    box-shadow: inset 0px 0px 100px 100px #002244;
+    box-shadow: inset 0px 0px 150px 150px #002244;
     background-position: center;
 }
 
@@ -19,13 +37,32 @@
 .mi--ffos {
     font-family: "Open-Sans";
 }
-.mi--image {
-}
+
 .my-marco {
-    background: #5b94ccad;
-    background: linear-gradient(180deg, rgba(9, 9, 121, 0) 55%, rgba(114, 163, 202, 0.4) 100%);
-    width: 380px;
-    height: 490px;
+    width: 418px;
+    height: 539px;
     border-radius: 4px;
     box-shadow: -13px 13px 50px rgba(0, 0, 0, 0.6);
+    position: relative;
+    overflow: hidden;
 }
+.my-marco::after{
+    position: absolute;
+    content: '';
+    height: 100%;
+    width: 100%;
+    background: #5b94ccad;
+    background: linear-gradient(
+        180deg,
+        rgba(9, 9, 121, 0) 55%,
+        rgba(114, 163, 202, 0.4) 100%
+    );
+    bottom: 0;
+}
+
+.cw__contact--me {
+    width: 90px;
+    height: 90px;
+}
+.cw__mi--nombre{font-size: 4.2em}
+.cw__mi--saludo{font-size: 1.5em}

@@ -1,10 +1,25 @@
 .content--all {
-    height: 80vh;
+    min-height: 78vh;
     position: relative;
     width: 100%;
     overflow: hidden;
     background-color: rgba(228, 235, 241, 0.1);
     box-shadow: -13px 13px 30px rgba(0, 0, 0, 0.4);
+}
+.content--all::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(9, 9, 121);
+    background: linear-gradient(
+        150deg,
+        rgba(9, 9, 121, 0) 60%,
+        rgba(24, 24, 24, 0.8) 80%
+    );
+    z-index: 2;
 }
 
 .item--content,
@@ -16,31 +31,39 @@
     height: 150px;
     width: 100px;
     z-index: 3;
-    transition: all 0.3s ease-in-out;
+    transition: height 0.3s ease-in-out, width 0.3s ease-in-out,
+        right 0.3s ease-in-out, bottom 0.3s ease-in-out;
 }
 
-.prc--01 {
-    background-color: #0b539b;
+.cw__prj--01,
+.cw__prj--02,
+.cw__prj--03 {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     bottom: 55px;
 }
 
-.prc--02 {
-    background-color: #5a9b63;
-    bottom: 55px;
+.cw__prj--01 {
+    background-image: url(http://192.168.0.8:5500//assets/img/book.jpg);
+}
+.cw__prj--02 {
+    background-image: url(https://images.pexels.com/photos/733856/pexels-photo-733856.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260);
+}
+.cw__prj--03 {
+    background-image: url(http://192.168.0.8:5500/assets/img/rickandmorty.jpg);
 }
 
-.prc--03 {
-    background-color: #bd8a1c;
-    bottom: 55px;
-}
 .opacity--00 {
     opacity: 0;
 }
+
 .active--01 {
     right: 130px;
     cursor: pointer;
     border-radius: 5px;
 }
+
 .active--02 {
     right: 20px;
     cursor: pointer;
@@ -91,4 +114,24 @@
 
 .project--description {
     font-family: "Open-Sans";
+}
+.cw__description--project {
+    bottom: 25px;
+    left: 25px;
+    width: 340px;
+    height: auto;
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(3px);
+}
+
+.cw__description--title {
+    font-size: 3em;
+    font-family: "Audiowide";
+    color: #17b3fc;
+}
+
+.cw__project--decoration {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 34, 68, 0.2);
 }

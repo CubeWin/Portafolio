@@ -1,0 +1,82 @@
+@media (max-width: 768px) {
+    .cw__background--transparent2:hover {
+        backdrop-filter: blur(6px);
+    }
+    .mi--title {
+        font-size: 3em;
+        letter-spacing: 2px;
+    }
+    .cw__bg--message {
+        height: 60%;
+    }
+    .cw__incio--titleBox {
+        font-size: 2.6em;
+        width: 70%;
+    }
+    .cw__title--message {
+        font-size: 0.4em;
+    }
+    .cw__person--dark {
+        height: 240px;
+    }
+    .cw__img--start {
+        height: 60px;
+    }
+    .my-marco {
+        background-image: url(http://192.168.0.8:5500/assets/img/smeliud.webp);
+        background-position: center;
+    }
+    .mi-background {
+        box-shadow: inset 0px 0px 90px 90px #002244;
+    }
+    .cw__bg--decoration {
+        height: 150px;
+    }
+    .item--content {
+        transition: none;
+    }
+    .cw__description--project {
+        bottom: auto;
+        left: 5px;
+        top: 5px;
+        width: calc(100% - 10px);
+    }
+    .decoration--content {
+        width: 40%;
+        right: 0;
+        padding: 5px 0px 5px 0px;
+        background-color: rgba(0, 0, 0, 0.6);
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+        backdrop-filter: blur(5px);
+    }
+    .decorator-box {
+        display: none;
+    }
+    .item--content {
+        height: 0;
+        width: 0;
+    }
+    .active--content {
+        width: 100%;
+        height: 100%;
+    }
+
+    .navbar-nav a {
+        text-align: center;
+    }
+}
+/* @media (max-width: 960px) {
+} */
+@media (max-width: 1370px) {
+    .cw__incio--titleBox {
+        font-size: 2.9em;
+    }
+    .cw__person--dark {
+        height: 320px;
+    }
+    .my-marco {
+        width: 342px;
+        height: 441px;
+    }
+}
