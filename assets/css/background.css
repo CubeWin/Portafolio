@@ -6,6 +6,9 @@
     overflow: hidden;
     width: 100%;
     position: relative;
+}
+
+.cw__background--radial{
     background: radial-gradient(
         circle,
         rgba(0, 103, 188, 1) 0%,
@@ -47,6 +50,7 @@
     animation: ktail 3s infinite;
 }
 
+
 .hair {
     animation: khair 5s ease-in-out infinite;
 }
@@ -58,6 +62,14 @@
 
 .campa2 {
     animation: kcamp2 4s infinite;
+    opacity: 0.87;
+}
+.campa {
+    opacity: 0.9;
+    transform: translateX(3px) rotateZ(-3deg);
+}
+.campa2 {
+    transform: translateX(-3px) rotateZ(3deg);
     opacity: 0.87;
 }
 /** nube */
@@ -82,7 +94,7 @@
 .cw__img--start {
     height: 80px;
     z-index: 2;
-    opacity: 0.9;
+    opacity: 1;
 }
 
 .cw__new--light {
@@ -125,7 +137,7 @@
     );
     box-shadow: inset 0px 0px 3px 1px rgb(19, 139, 235),
         0px 0px 15px 10px rgb(19, 139, 235);
-    animation: cubeLun 5s linear infinite;
+    /* animation: cubeLun 5s linear infinite; */
 }
 
 /** mensaje */
@@ -141,7 +153,7 @@
 .cw__incio--titleBox {
     font-size: 4em;
     font-family: "Audiowide", cursive;
-    animation: text-win 10s infinite linear;
+    animation: text-win 10s linear;
 }
 
 .cw__incio--title {

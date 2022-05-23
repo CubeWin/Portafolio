@@ -6,7 +6,7 @@
     background-color: rgba(228, 235, 241, 0.1);
     box-shadow: -13px 13px 30px rgba(0, 0, 0, 0.4);
 }
-.content--all::after {
+/* .content--all::after {
     content: "";
     position: absolute;
     top: 0;
@@ -19,8 +19,8 @@
         rgba(9, 9, 121, 0) 60%,
         rgba(24, 24, 24, 0.8) 80%
     );
-    z-index: 2;
-}
+    z-index: 1;
+} */
 
 .item--content,
 .decoration--content {
@@ -32,7 +32,7 @@
     width: 100px;
     z-index: 3;
     transition: height 0.3s ease-in-out, width 0.3s ease-in-out,
-        right 0.3s ease-in-out, bottom 0.3s ease-in-out;
+        right 0.3s ease-in-out, bottom 0.3s ease-in-out,  box-shadow 0.5s ease-in-out;
 }
 
 .cw__prj--01,
@@ -45,13 +45,14 @@
 }
 
 .cw__prj--01 {
-    background-image: url(http://192.168.0.8:5500//assets/img/book.jpg);
+    background-image: url(http://192.168.0.8:5500/assets/img/picture06.jpg);
 }
 .cw__prj--02 {
-    background-image: url(https://images.pexels.com/photos/733856/pexels-photo-733856.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260);
+    background-image: url(http://192.168.0.8:5500/assets/img/picture03.png);
+    background-position: left top;
 }
 .cw__prj--03 {
-    background-image: url(http://192.168.0.8:5500/assets/img/rickandmorty.jpg);
+    background-image: url(http://192.168.0.8:5500/assets/img/picture05.jpg);
 }
 
 .opacity--00 {
@@ -62,12 +63,16 @@
     right: 130px;
     cursor: pointer;
     border-radius: 5px;
+    border: 1px solid #FFC107;
+    box-shadow: 0px 0px 3px rgba(22, 27, 29, 0.4);
 }
 
 .active--02 {
     right: 20px;
     cursor: pointer;
     border-radius: 5px;
+    border: 1px solid #FFC107;
+    box-shadow: 0px 0px 3px rgba(22, 27, 29, 0.4);
 }
 
 .decoration--content {
@@ -100,12 +105,13 @@
     border-radius: 50%;
     cursor: pointer;
     background-color: #e4ebf1;
+    transition: box-shadow 0.5s;
 }
 
 .active--01:hover,
 .active--02:hover,
 .carrusel--arrow:hover {
-    box-shadow: -3px -3px 10px #fafbff8e, 3px 3px 10px #161b1d77;
+    box-shadow: -3px -3px 6px #fafbffe1, 3px 3px 6px #161b1d77;
 }
 
 .carrusel--shadow {
@@ -120,8 +126,8 @@
     left: 25px;
     width: 340px;
     height: auto;
-    background: rgba(0, 0, 0, 0.3);
-    backdrop-filter: blur(3px);
+    background: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(5px);
 }
 
 .cw__description--title {

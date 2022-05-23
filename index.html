@@ -20,7 +20,7 @@
 
 <body style="background-color: #002244">
 
-    <main class="cw__inicio--main">
+    <main class="cw__inicio--main cw__background--radial">
         <div class="overflow-hidden">
             <div class="cw__inicio--animation">
                 <div class="cw__navigation--inicio">
@@ -28,7 +28,7 @@
                         <div class="container-fluid d-flex justify-content-between">
                             <a class="text-light text-decoration-none" href="#">
                                 <img src="./assets/img/cubewin.svg" alt="CubeWin" style="height: 50px" />
-                                CubeWin
+                                CubeWin <span id="luij"></span>
                             </a>
                             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#cw-navbar" aria-controls="cw-navbar" aria-expanded="false"
@@ -65,17 +65,19 @@
 
                 <div class="position-absolute cw-background-nc">
                     <div class="position-absolute w-100 bottom-0 d-flex align-items-center justify-content-center">
-                        <img src="assets/img/ambiente/montanha01.svg" class="img-fluid position-absolute bottom-0"
+                        <img src="assets/img/ambiente/montanha01.svg" class="img-fluid w-100 position-absolute bottom-0"
                             alt="" />
-                        <img src="assets/img/ambiente/montanha02.svg" class="img-fluid position-absolute bottom-0"
+                        <img src="assets/img/ambiente/montanha02.svg" class="img-fluid w-100 position-absolute bottom-0"
                             alt="" />
-                        <img src="assets/img/ambiente/cesped01.svg" class="img-fluid position-absolute bottom-0"
+                        <img src="assets/img/ambiente/cesped01.svg" class="img-fluid w-100 position-absolute bottom-0"
                             alt="" />
-                        <img src="assets/img/ambiente/cesped02.svg" class="img-fluid position-absolute bottom-0"
-                            style="animation: cesped 3s infinite" alt="" />
-                        <img src="assets/img/ambiente/pastito01.svg" class="img-fluid position-absolute bottom-0"
+                        <img src="assets/img/ambiente/cesped02.svg" class="img-fluid w-100 position-absolute bottom-0"
                             alt="" />
-                        <img src="assets/img/ambiente/tierra02.svg" class="img-fluid position-absolute bottom-0"
+                        <!-- <img src="assets/img/ambiente/cesped02.svg" class="img-fluid w-100 position-absolute bottom-0"
+                            style="animation: cesped 3s infinite" alt="" /> -->
+                        <img src="assets/img/ambiente/pastito01.svg" class="img-fluid w-100 position-absolute bottom-0"
+                            alt="" />
+                        <img src="assets/img/ambiente/tierra02.svg" class="img-fluid w-100 position-absolute bottom-0"
                             alt="" />
                     </div>
                     <div class="cw__person--dark d-flex justify-content-center">
@@ -133,7 +135,7 @@
 
     <div class="position-relative cw__sobre--mi">
         <div class="position-absolute cw__bg--decoration"></div>
-        <div class="container cw__sobre--mi py-5 d-flex justify-content-between flex-column">
+        <div class="container cw__sobre--mi py-5 d-flex justify-content-around flex-column">
             <h2 class="text-white text-center mi--title mb-5">
                 Sobre Mí
             </h2>
@@ -163,19 +165,8 @@
                                 resultados deseados y dispuesto a
                                 obtener nuevos conocimientos.
                             </p>
-                            <div class="pt-5 d-flex justify-content-center align-items-center">
-                                <a href="#"
-                                    class="cw__contact--me text-decoration-none mx-3 p-2 cw__background--transparent rounded d-flex justify-content-center align-items-center">
-                                    <i class="fa fa-twitter fa-4x text-white"></i>
-                                </a>
-                                <a href="#"
-                                    class="cw__contact--me text-decoration-none mx-3 p-2 cw__background--transparent rounded d-flex justify-content-center align-items-center">
-                                    <i class="fa fa-github fa-4x text-white"></i>
-                                </a>
-                                <a href="#"
-                                    class="cw__contact--me text-decoration-none mx-3 p-2 cw__background--transparent rounded d-flex justify-content-center align-items-center">
-                                    <i class="fa fa-linkedin fa-4x text-white"></i>
-                                </a>
+                            <div class="pt-3 d-flex justify-content-center align-items-center">
+                                <a href="#" class="cw__btn text-decoration-none cw-blue-shadow"><i class="fa fa-file"></i> Curriculúm Vitale</a>
                             </div>
                         </div>
                     </div>
@@ -216,9 +207,6 @@
                         <a class="btn btn-sm btn-outline-info text-white">
                             <i class="fa fa-github text-white"></i> Front End
                         </a>
-                        <a class="btn btn-sm btn-outline-info text-white">
-                            <i class="fa fa-internet-explorer text-white"></i> Demo
-                        </a>
                     </div>
                 </div>
                 <div id="project02" mykey="2" class="item--content cw__prj--02 active--01 overflow-hidden">
@@ -226,28 +214,22 @@
                     <div id="description--project02"
                         class="position-absolute p-3 text-white opacity--00 cw__description--project">
                         <h3 class="cw__description--title">
-                            Hoja de vida
+                            CRUD
                         </h3>
                         <p class="project--description">
-                            Se registran los datos para finalmente realizar la impresion del documento en formato PDF.
+                            Realiza la creación, lectura, actualizacion y eliminacion de datos de una persona
                         </p>
                         <p>
                             Tecnologías usadas:
                         <div class="badge bg-danger">HTML</div>
                         <div class="badge bg-danger">CSS</div>
                         <div class="badge bg-danger">JavaScript</div>
-                        <div class="badge bg-danger">NodeJS</div>
-                        <div class="badge bg-danger">MongoDB</div>
+                        <div class="badge bg-danger">PHP</div>
+                        <div class="badge bg-danger">MySQL</div>
                         </p>
                         <p>links: </p>
                         <a class="btn btn-sm btn-outline-info text-white">
-                            <i class="fa fa-github text-white"></i> Back End
-                        </a>
-                        <a class="btn btn-sm btn-outline-info text-white">
-                            <i class="fa fa-github text-white"></i> Front End
-                        </a>
-                        <a class="btn btn-sm btn-outline-info text-white">
-                            <i class="fa fa-internet-explorer text-white"></i> Demo
+                            <i class="fa fa-github text-white"></i> Código fuente
                         </a>
                     </div>
                 </div>
@@ -268,10 +250,10 @@
                         <div class="badge bg-danger">JavaScript</div>
                         </p>
                         <p>links: </p>
-                        <a class="btn btn-sm btn-outline-info text-white">
+                        <a href="https://github.com/CubeWin/Rick-and-Morty-HTML-CSS-JS" target="_blank" class="btn btn-sm btn-outline-info text-white">
                             <i class="fa fa-github text-white"></i> Front End
                         </a>
-                        <a class="btn btn-sm btn-outline-info text-white">
+                        <a href="https://cubewin.github.io/Rick-and-Morty-HTML-CSS-JS/" target="_blank" class="btn btn-sm btn-outline-info text-white">
                             <i class="fa fa-internet-explorer text-white"></i> Demo
                         </a>
                     </div>
@@ -289,6 +271,82 @@
                         <span></span>
                     </div>
                 </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="py-5">
+        <div class="container">
+            <h2 class="text-white text-center mi--title mb-5">
+                Contacto
+            </h2>
+            <div class="py-5 text-center">
+                <small class="text-white">Se enviara datos de contacto al siguiente correo:</small>
+                <form class="d-flex flex-column justify-content-center align-items-center" action="">
+                    <input class="cw-input-form cw-blue-shadow my-3" type="text" placeholder="Ingresar correo">
+                    <button class="cw__btn cw-blue-shadow my-3" type="submit"><i class="fa fa-send"></i> Enviar</button>
+                </form>
+            </div>
+            <p class="text-white text-center">Redes sociales:</p>
+            <div class="py-5 d-flex justify-content-center align-items-center">
+                <a href="#"
+                    class="cw__contact--me text-decoration-none mx-3 p-2 cw__background--transparent rounded d-flex flex-column justify-content-center align-items-center">
+                    <i class="fa fa-twitter fa-4x"></i>
+                    <p class="p-0 m-0">Twitter</p>
+                </a>
+                <a href="#"
+                    class="cw__contact--me text-decoration-none mx-3 p-2 cw__background--transparent rounded d-flex flex-column justify-content-center align-items-center">
+                    <i class="fa fa-github fa-4x"></i>
+                    <p class="p-0 m-0">Git Hub</p>
+                </a>
+                <a href="#"
+                    class="cw__contact--me text-decoration-none mx-3 p-2 cw__background--transparent rounded d-flex flex-column justify-content-center align-items-center">
+                    <i class="fa fa-linkedin fa-4x"></i>
+                    <p class="p-0 m-0">LinkedIn</p>
+                </a>
+            </div>
+        </div>
+        
+    </div>
+    <div class="cw__footer">
+        <div class="container d-flex flex-column justify-content-center align-items-center">
+            <h2 class="text-white text-center my-5 text-uppercase h4">
+                Esta página web fue realizada con
+            </h2>
+            <div class="cw__icon--content">
+                <div
+                    class="cw__web--icon text-decoration-none">
+                    <img src="./assets/img/icons/html5.svg" alt="">
+                    <p>HTML</p>
+                </div>
+                <div
+                    class="cw__web--icon text-decoration-none">
+                    <img src="./assets/img/icons/css3.svg" alt="">
+                    <p>CSS3</p>
+                </div>
+                <div
+                    class="cw__web--icon text-decoration-none">
+                    <img src="./assets/img/icons/javascript.svg" alt="">
+                    <p>JavaScript</p>
+                </div>
+                <div
+                    class="cw__web--icon text-decoration-none">
+                    <img src="./assets/img/icons/bootstrap.svg" alt="">
+                    <p>Bootstrap</p>
+                </div>
+                <div
+                    class="cw__web--icon text-decoration-none">
+                    <img src="./assets/img/icons/p5js.svg" alt="">
+                    <p>P5JS</p>
+                </div>
+                <div
+                    class="cw__web--icon text-decoration-none">
+                    <img src="./assets/img/icons/font-awesome.svg" alt="">
+                    <p>Font awesome</p>
+                </div>
+            </div>
+            <div class="mb-5 pt-3 d-flex justify-content-center align-items-center">
+                <a href="#" target="_blank" class="cw__btn text-decoration-none cw-blue-shadow"><i class="fa fa-external-link"></i> Revisar código</a>
             </div>
         </div>
     </div>

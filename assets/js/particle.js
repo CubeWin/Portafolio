@@ -8,11 +8,11 @@ class Paticle {
      * @param {*} posicion en el que iniciara la animacion (0.0 ~ 2.0)
      */
     constructor(
-        ejeY = random(5, window.innerHeight + 170),
+        ejeY = Math.random() * (window.innerHeight + 165) + 5,
         concavo = 195,
         potencialCurva = 2,
-        paso = random(0.0001, 0.00025),
-        posicion = random(0.0, 2.0)
+        paso = Math.random() * 0.00015 + 0.0001,//0.0001 0.00025
+        posicion = Math.random() * 2
     ) {
         this.cw_width = window.innerWidth;
         this.cw_height = window.innerHeight;
@@ -30,8 +30,8 @@ class Paticle {
         this.paso = paso;
         this.cp = posicion;
         this.cp2 = 0.0;
-        this.rmove = random(500, 1000); //cantidad de ticks para alternar estrella
-        this.rmoves = random(0, 900); //ticks donde se encuentra para alternar
+        this.rmove = Math.random() * 500 + 500; //cantidad de ticks para alternar estrella
+        this.rmoves = Math.random() * 900; //ticks donde se encuentra para alternar
         this.rboo = true; //estadi del alternar estrella
         this.moveParticle();
     }
@@ -90,6 +90,8 @@ let particles = [];
 let cw__width = window.innerWidth;
 let cw__height = window.innerHeight;
 
+p5.disableFriendlyErrors = true;
+
 function setup() {
     let nParticles = 0;
     let fRate = 0;
@@ -97,15 +99,17 @@ function setup() {
     cnv.id("MyNewCanvas");
     // 447
     if (cw__width > 768) {
-        nParticles = 447;
-        fRate = 60;
+        // nParticles = 447;
+        nParticles = 407;
+        fRate = 30;
     } else {
         nParticles = 100;
-        fRate = 25;
+        fRate = 12;
     }
 
     for (let i = 0; i < nParticles; i++) {
-        let speed = cw__width > 768 ? undefined : random(0.001, 0.0025);
+        let speed =
+            cw__width > 768 ? undefined : Math.random() * 0.0015 + 0.001;
         particles.push(new Paticle(undefined, undefined, undefined, speed));
     }
     frameRate(fRate);
@@ -128,6 +132,8 @@ function draw() {
         particles[i].createParticle();
         particles[i].moveParticle();
     }
+    // let fps = frameRate();
+    // (document.querySelector("#luij").innerHTML = "FPS: " + fps.toFixed(2))
 }
 
 function windowResized() {
