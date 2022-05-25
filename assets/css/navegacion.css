@@ -17,3 +17,8 @@
 .cw__navbar {
     flex-grow: 0;
 }
+.cw-navItem{ border-bottom: inset 2px #ffffff00; cursor: pointer;}
+.cw-navItem:hover{
+    background-color: #0202021e ;
+    border-bottom: inset 2px rgb(255, 255, 255);
+}
