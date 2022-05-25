@@ -45,14 +45,14 @@
 }
 
 .cw__prj--01 {
-    background-image: url(http://192.168.0.8:5500/assets/img/picture06.jpg);
+    background-image: url(../img/picture06.jpg);
 }
 .cw__prj--02 {
-    background-image: url(http://192.168.0.8:5500/assets/img/picture03.png);
+    background-image: url(../img/picture04.jpg);
     background-position: left top;
 }
 .cw__prj--03 {
-    background-image: url(http://192.168.0.8:5500/assets/img/picture05.jpg);
+    background-image: url(../img/picture05.jpg);
 }
 
 .opacity--00 {

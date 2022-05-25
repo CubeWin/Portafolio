@@ -37,25 +37,20 @@
                             </button>
                             <div class="collapse navbar-collapse cw__navbar" id="cw-navbar">
                                 <div class="navbar-nav">
-                                    <div class="nav-link active">
-                                        <a class="nav-link p-3 mx-3 text-white fw-bold text-uppercase"
-                                            href="./">Inicio</a>
+                                    <div class="nav-link">
+                                        <a class="nav-link p-3 mx-3 text-white fw-bold text-uppercase" onclick="goTo(this)" goelement="sobreMi">
+                                            Sobre mí
+                                        </a>
                                     </div>
                                     <div class="nav-link">
-                                        <a class="nav-link p-3 mx-3 text-white fw-bold text-uppercase" href="./">
-                                            Sobre mí</a>
+                                        <a class="nav-link p-3 mx-3 text-white fw-bold text-uppercase" onclick="goTo(this)" goelement="portafolio">
+                                            Portafolio
+                                        </a>
                                     </div>
                                     <div class="nav-link">
-                                        <a class="nav-link p-3 mx-3 text-white fw-bold text-uppercase"
-                                            href="./">Habilidades</a>
-                                    </div>
-                                    <div class="nav-link">
-                                        <a class="nav-link p-3 mx-3 text-white fw-bold text-uppercase"
-                                            href="./">Portafolio</a>
-                                    </div>
-                                    <div class="nav-link">
-                                        <a class="nav-link p-3 mx-3 text-white fw-bold text-uppercase"
-                                            href="./">Contactos</a>
+                                        <a class="nav-link p-3 mx-3 text-white fw-bold text-uppercase" onclick="goTo(this)" goelement="contacto">
+                                            Contacto
+                                        </a>
                                     </div>
                                 </div>
                             </div>
@@ -133,7 +128,7 @@
         </div>
     </main>
 
-    <div class="position-relative cw__sobre--mi">
+    <div class="position-relative cw__sobre--mi" id="sobreMi">
         <div class="position-absolute cw__bg--decoration"></div>
         <div class="container cw__sobre--mi py-5 d-flex justify-content-around flex-column">
             <h2 class="text-white text-center mi--title mb-5">
@@ -166,7 +161,8 @@
                                 obtener nuevos conocimientos.
                             </p>
                             <div class="pt-3 d-flex justify-content-center align-items-center">
-                                <a href="#" class="cw__btn text-decoration-none cw-blue-shadow"><i class="fa fa-file"></i> Curriculúm Vitale</a>
+                                <!-- !FALTA DESCRIPCION -->
+                                <a href="./assets/pdf/EliudPedraza.pdf" target="_blank" class="cw__btn text-decoration-none cw-blue-shadow"><i class="fa fa-file"></i> Curriculúm Vitale</a>
                             </div>
                         </div>
                     </div>
@@ -175,7 +171,7 @@
         </div>
     </div>
 
-    <div class="container-fluid position-relative" style="min-height: 100vh">
+    <div class="container-fluid position-relative" id="portafolio" style="min-height: 100vh">
         <div class="py-5 container">
             <h2 class="text-white text-center mi--title mb-5">
                 Portafolio
@@ -201,10 +197,11 @@
                         <div class="badge bg-danger">MongoDB</div>
                         </p>
                         <p>links: </p>
-                        <a class="btn btn-sm btn-outline-info text-white">
+                        <!-- !FALTA DESCRIPCION -->
+                        <a href="https://github.com/CubeWin/BookNODEJS" target="_blank" class="btn btn-sm btn-outline-info text-white">
                             <i class="fa fa-github text-white"></i> Back End
                         </a>
-                        <a class="btn btn-sm btn-outline-info text-white">
+                        <a href="https://github.com/CubeWin/BookFrontJS" target="_blank" class="btn btn-sm btn-outline-info text-white">
                             <i class="fa fa-github text-white"></i> Front End
                         </a>
                     </div>
@@ -228,7 +225,7 @@
                         <div class="badge bg-danger">MySQL</div>
                         </p>
                         <p>links: </p>
-                        <a class="btn btn-sm btn-outline-info text-white">
+                        <a href="https://github.com/CubeWin/PHP_MVC_AJAX" target="_blank" class="btn btn-sm btn-outline-info text-white">
                             <i class="fa fa-github text-white"></i> Código fuente
                         </a>
                     </div>
@@ -275,39 +272,45 @@
         </div>
     </div>
 
-    <div class="py-5">
+    <div class="py-5" id="contacto">
         <div class="container">
             <h2 class="text-white text-center mi--title mb-5">
                 Contacto
             </h2>
             <div class="py-5 text-center">
                 <small class="text-white">Se enviara datos de contacto al siguiente correo:</small>
-                <form class="d-flex flex-column justify-content-center align-items-center" action="">
-                    <input class="cw-input-form cw-blue-shadow my-3" type="text" placeholder="Ingresar correo">
-                    <button class="cw__btn cw-blue-shadow my-3" type="submit"><i class="fa fa-send"></i> Enviar</button>
+                <form class="d-flex flex-column justify-content-center align-items-center" onsubmit="return false" autocomplete="off">
+                    <!-- !FALTA DESCRIPCION -->
+                    <input id="emailSend" name="email" class="cw-input-form cw-blue-shadow my-3 position-relative" type="text" placeholder="Ingresar correo" required>
+                    <span id="validSend" class="position-absolute small p-0 m-0 fw-bold" ></span>
+                    <button class="cw__btn cw-blue-shadow my-3" type="submit" onclick="sendContact(this)"><i class="fa fa-send"></i> Enviar</button>
                 </form>
             </div>
             <p class="text-white text-center">Redes sociales:</p>
+            <!-- !FALTA DESCRIPCION -->
             <div class="py-5 d-flex justify-content-center align-items-center">
-                <a href="#"
+                <a href="https://twitter.com/CubeEliud"
+                    target="_blank"
                     class="cw__contact--me text-decoration-none mx-3 p-2 cw__background--transparent rounded d-flex flex-column justify-content-center align-items-center">
                     <i class="fa fa-twitter fa-4x"></i>
                     <p class="p-0 m-0">Twitter</p>
                 </a>
-                <a href="#"
+                <a href="https://github.com/CubeWin"
+                    target="_blank"
                     class="cw__contact--me text-decoration-none mx-3 p-2 cw__background--transparent rounded d-flex flex-column justify-content-center align-items-center">
                     <i class="fa fa-github fa-4x"></i>
                     <p class="p-0 m-0">Git Hub</p>
                 </a>
-                <a href="#"
+                <a href="https://www.linkedin.com/in/eliud-pedraza-churata-9aa58717a/"
+                    target="_blank"
                     class="cw__contact--me text-decoration-none mx-3 p-2 cw__background--transparent rounded d-flex flex-column justify-content-center align-items-center">
                     <i class="fa fa-linkedin fa-4x"></i>
                     <p class="p-0 m-0">LinkedIn</p>
                 </a>
             </div>
         </div>
-        
     </div>
+
     <div class="cw__footer">
         <div class="container d-flex flex-column justify-content-center align-items-center">
             <h2 class="text-white text-center my-5 text-uppercase h4">
@@ -346,7 +349,7 @@
                 </div>
             </div>
             <div class="mb-5 pt-3 d-flex justify-content-center align-items-center">
-                <a href="#" target="_blank" class="cw__btn text-decoration-none cw-blue-shadow"><i class="fa fa-external-link"></i> Revisar código</a>
+                <a href="https://github.com/CubeWin/Portafolio" target="_blank" class="cw__btn text-decoration-none cw-blue-shadow"><i class="fa fa-external-link"></i> Revisar código</a>
             </div>
         </div>
     </div>
@@ -355,6 +358,7 @@
     <script src="./assets/js/popper.min.js"></script>
     <script src="./assets/js/bootstrap.min.js"></script>
     <script src="./assets/js/carrusel.js"></script>
+    <script src="./assets/js/mail.js"></script>
 </body>
 
 </html>

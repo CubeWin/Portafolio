@@ -23,7 +23,7 @@
         height: 60px;
     }
     .my-marco {
-        background-image: url(http://192.168.0.8:5500/assets/img/smeliud.webp);
+        background-image: url(../img/smeliud.webp);
         background-position: center;
     }
     .mi-background {

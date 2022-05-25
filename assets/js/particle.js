@@ -146,7 +146,7 @@ window.onscroll = function () {
 
 function functionScroll() {
     let scroll = document.documentElement.scrollTop;
-    if (scroll > 5) {
+    if (scroll > 450) {
         noLoop();
     } else {
         loop();

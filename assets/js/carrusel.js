@@ -83,3 +83,8 @@ const prevPag = () => {
         pjt02.click();
     }
 };
+
+const goTo = (a) => {
+    const element = a.getAttribute("goelement");
+    document.getElementById(element).scrollIntoView();
+};
